@@ -1,0 +1,21 @@
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+XmlControllerTest: test_should_get_input
+----------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-12-12 15:38:44 +0300
+Processing by XmlController#index as HTML
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+XmlControllerTest: test_should_get_output
+-----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+XmlControllerTest: test_should_get_format_xml
+---------------------------------------------
+Started GET "/?format=xml" for 127.0.0.1 at 2018-12-12 15:57:05 +0300
+Processing by XmlController#index as XML
+Completed 200 OK in 104ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
