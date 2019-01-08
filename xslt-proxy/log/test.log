@@ -1,0 +1,218 @@
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ProxyControllerTest: test_should_get_html
+-----------------------------------------
+Started GET "/proxy/output?num=6&side=server" for 127.0.0.1 at 2018-12-12 16:27:35 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num"=>"6", "side"=>"server"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ProxyControllerTest: test_should_get_xml
+----------------------------------------
+Started GET "/proxy/output?num=4&side=client" for 127.0.0.1 at 2018-12-12 16:27:35 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num"=>"4", "side"=>"client"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+ProxyControllerTest: test_should_get_output
+-------------------------------------------
+Started GET "/proxy/output" for 127.0.0.1 at 2018-12-12 16:27:35 +0300
+Processing by ProxyController#output as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+ProxyControllerTest: test_should_get_input
+------------------------------------------
+Started GET "/proxy/input" for 127.0.0.1 at 2018-12-12 16:27:35 +0300
+Processing by ProxyController#input as HTML
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 929ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+ProxyControllerTest: test_should_get_htm_in_browser
+---------------------------------------------------
+Started GET "/proxy/output?num=6&side=client-with-xslt" for 127.0.0.1 at 2018-12-12 16:27:36 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num"=>"6", "side"=>"client-with-xslt"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ProxyControllerTest: test_should_get_html
+-----------------------------------------
+Started GET "/proxy/output?num=6&side=server" for 127.0.0.1 at 2018-12-12 19:42:55 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num"=>"6", "side"=>"server"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ProxyControllerTest: test_should_get_xml
+----------------------------------------
+Started GET "/proxy/output?num=4&side=client" for 127.0.0.1 at 2018-12-12 19:42:55 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num"=>"4", "side"=>"client"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+ProxyControllerTest: test_should_get_input
+------------------------------------------
+Started GET "/proxy/input" for 127.0.0.1 at 2018-12-12 19:42:55 +0300
+Processing by ProxyController#input as HTML
+  Rendering proxy/input.html.erb within layouts/application
+  Rendered proxy/input.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5068ms (Views: 5064.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+ProxyControllerTest: test_should_get_htm_in_browser
+---------------------------------------------------
+Started GET "/proxy/output?num=6&side=client-with-xslt" for 127.0.0.1 at 2018-12-12 19:43:00 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num"=>"6", "side"=>"client-with-xslt"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+ProxyControllerTest: test_should_get_output
+-------------------------------------------
+Started GET "/proxy/output" for 127.0.0.1 at 2018-12-12 19:43:00 +0300
+Processing by ProxyController#output as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+ProxyControllerTest: test_should_get_output
+-------------------------------------------
+Started GET "/proxy/output?side=client_with_xslt&text=10" for 127.0.0.1 at 2018-12-12 20:37:19 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"side"=>"client_with_xslt", "text"=>"10"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+ProxyControllerTest: test_should_return_HTML
+--------------------------------------------
+Started GET "/proxy/output?text=60&side=server" for 127.0.0.1 at 2018-12-12 20:37:19 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"text"=>"60", "side"=>"server"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------
+ProxyControllerTest: test_should_return_various_results
+-------------------------------------------------------
+Started GET "/proxy/output?side=client_with_xslt&text=10" for 127.0.0.1 at 2018-12-12 20:37:19 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"side"=>"client_with_xslt", "text"=>"10"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+ProxyControllerTest: test_should_return_HTML
+--------------------------------------------
+Started GET "/proxy/output?text=60&side=server" for 127.0.0.1 at 2018-12-12 20:37:51 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"text"=>"60", "side"=>"server"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------
+ProxyControllerTest: test_should_return_various_results
+-------------------------------------------------------
+Started GET "/proxy/output?side=client_with_xslt&text=10" for 127.0.0.1 at 2018-12-12 20:37:51 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"side"=>"client_with_xslt", "text"=>"10"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+ProxyControllerTest: test_should_get_output
+-------------------------------------------
+Started GET "/proxy/output?side=client_with_xslt&text=10" for 127.0.0.1 at 2018-12-12 20:37:51 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"side"=>"client_with_xslt", "text"=>"10"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+ProxyControllerTest: test_should_get_htm_in_browser
+---------------------------------------------------
+Started GET "/proxy/output?num=6&side=client-with-xslt" for 127.0.0.1 at 2018-12-12 20:39:37 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num"=>"6", "side"=>"client-with-xslt"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+ProxyControllerTest: test_should_get_output
+-------------------------------------------
+Started GET "/proxy/output" for 127.0.0.1 at 2018-12-12 20:39:37 +0300
+Processing by ProxyController#output as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ProxyControllerTest: test_should_get_html
+-----------------------------------------
+Started GET "/proxy/output?num=6&side=server" for 127.0.0.1 at 2018-12-12 20:39:37 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num"=>"6", "side"=>"server"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ProxyControllerTest: test_should_get_xml
+----------------------------------------
+Started GET "/proxy/output?num=4&side=client" for 127.0.0.1 at 2018-12-12 20:39:37 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num"=>"4", "side"=>"client"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+ProxyControllerTest: test_should_get_xml
+----------------------------------------
+Started GET "/proxy/output?num=4&side=client" for 127.0.0.1 at 2018-12-12 20:41:10 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num"=>"4", "side"=>"client"}
+Completed 200 OK in 1304ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+ProxyControllerTest: test_should_get_output
+-------------------------------------------
+Started GET "/proxy/output" for 127.0.0.1 at 2018-12-12 20:41:11 +0300
+Processing by ProxyController#output as HTML
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+ProxyControllerTest: test_should_get_htm_in_browser
+---------------------------------------------------
+Started GET "/proxy/output?num=6&side=client-with-xslt" for 127.0.0.1 at 2018-12-12 20:41:11 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num"=>"6", "side"=>"client-with-xslt"}
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+ProxyControllerTest: test_should_get_html
+-----------------------------------------
+Started GET "/proxy/output?num=6&side=server" for 127.0.0.1 at 2018-12-12 20:41:11 +0300
+Processing by ProxyController#output as HTML
+  Parameters: {"num"=>"6", "side"=>"server"}
+  Rendering proxy/output.html.erb within layouts/application
+  Rendering inline template
+  Rendered inline template (0.4ms)
+  Rendered proxy/output.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 764ms (Views: 696.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
